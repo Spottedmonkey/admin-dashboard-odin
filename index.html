@@ -9,10 +9,43 @@
   <body>
     <div class="layout-container">
       <div class="header layout">
-        <div class="searchbar header-group">Search</div>
-        <div class="postbar header-group">Post</div>
-        <div class="introduction header-group">Introduction</div>
-        <div class="profile-small header-group">Profile</div>
+        <div class="searchbar header-group">
+          <form method="post">
+            <label for="post-search"
+              ><img src="./images/search.svg" alt="Icon of a magnifying glass"
+            /></label>
+            <input
+              type="search"
+              name="post_search"
+              id="post-search"
+              placeholder="Search"
+            />
+          </form>
+        </div>
+
+        <div class="postbar header-group">
+          <button class="new-post postbar-content">New</button>
+          <button class="upload-post postbar-content">Upload</button>
+          <button class="share-post postbar-content">Share</button>
+        </div>
+
+        <div class="introduction header-group">
+          <div class="image introduction-content">
+            <img src="./images/mr-squatch.jpeg" alt="User profile picture" />
+          </div>
+          <div class="greeting introduction-content">Hi there,</div>
+          <div class="name introduction-content">Morgan Oakley(@morgan)</div>
+        </div>
+
+        <div class="profile-small header-group">
+          <button class="notification-btn profile-content">
+            <img src="./images/notification.svg" alt="Icon of a bell ringing" />
+          </button>
+          <div class="avatar profile-content">
+            <img src="./images/mr-squatch.jpeg" alt="" />
+          </div>
+          <div class="user-name profile-content">Morgan Oakley</div>
+        </div>
       </div>
 
       <div class="sidebar layout">
