@@ -11,7 +11,7 @@
 
 .layout-container {
   display: grid;
-  grid-template: 1fr 4.6fr /1fr 3.6fr;
+  grid-template: 1fr 4.6fr / 225px 3.6fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main"
@@ -229,4 +229,36 @@
 
 .main-group {
   border: 2px solid green;
+}
+
+/* --main/projects */
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr 15fr;
+  gap: 7px;
+  margin-left: 10px;
+}
+
+.project-title {
+  display: grid;
+  align-content: end;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.project-content {
+  /* border: 2px solid firebrick; */
+}
+
+.project-article {
+  border-left: 8px solid orange;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
