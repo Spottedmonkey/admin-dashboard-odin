@@ -20,7 +20,7 @@
   width: 100vw;
 }
 
-/* header*/
+/* #region header*/
 
 .header {
   display: grid;
@@ -31,7 +31,7 @@
   background-color: var(--main-color);
 }
 
-/* --header/searchbar */
+/* #region --header/searchbar */
 
 .searchbar {
   grid-area: search;
@@ -65,8 +65,9 @@
   align-items: center;
   grid-template-columns: 60px 1fr;
 }
+/* #endregion */
 
-/* --header/profile-small */
+/* #region --header/profile-small */
 
 .profile-small {
   grid-area: profile-small;
@@ -107,8 +108,9 @@
   align-content: center;
   font-weight: 600;
 }
+/* #endregion */
 
-/* --header/postbar */
+/* #region --header/postbar */
 
 .postbar {
   display: grid;
@@ -129,7 +131,9 @@
   font-weight: 600;
 }
 
-/* --header/introduction */
+/* #endregion */
+
+/* #region --header/introduction */
 
 .introduction {
   display: grid;
@@ -169,8 +173,10 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+/* #endregion */
+/* #endregion */
 
-/*sidebar section */
+/* #region sidebar section */
 
 .sidebar {
   display: grid;
@@ -219,24 +225,28 @@
   height: 1.2rem;
 }
 
-/*main section*/
+/* #endregion */
+
+/*#region main section*/
 
 .main {
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 2.6fr 1fr;
+  gap: 10px;
+  padding-bottom: 70px;
 }
 
 .main-group {
   border: 2px solid green;
 }
 
-/* --main/projects */
+/*#region --main/projects */
 
 .project {
   display: grid;
-  grid-template-rows: 1fr 15fr;
-  gap: 7px;
+  grid-template-rows: 40px 1fr;
+  gap: 1.5vh;
   margin-left: 10px;
 }
 
@@ -249,16 +259,50 @@
 
 .project-article-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-.project-content {
-  /* border: 2px solid firebrick; */
-}
-
 .project-article {
-  border-left: 8px solid orange;
+  border-left: 8px solid #f0b429;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
   border-radius: 10px;
   background-color: #ffffff;
+  padding: 10px 10px;
+  gap: 5px;
 }
+
+.article-title {
+  font-size: 1rem;
+  font-weight: 700;
+  display: grid;
+  align-content: end;
+}
+
+.article {
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.article-icons {
+  display: grid;
+  grid-template-columns: 23px 23px 23px;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 25px;
+}
+
+.article-btn {
+  width: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region --main/announcements */
+
+/* #endregion */
+
+/* #endregion */
